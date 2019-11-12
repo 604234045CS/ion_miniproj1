@@ -1,0 +1,48 @@
+
+<ion-header>
+  <ion-navbar>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+      <ion-title>Movie App</ion-title>
+      
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button block color="dark">ALL About Movie</button> 
+  <ion-item (click)="Now()">
+      <ion-thumbnail item-left>
+          <img src="assets/imgs/Now.jpg">
+        </ion-thumbnail>
+      <h2>Now</h2>
+      <p>Now Playing</p>
+    </ion-item>
+
+    <ion-item (click)="Upcoming()">
+        <ion-thumbnail item-left>
+            <img src="assets/imgs/Upcoming.jpg">
+          </ion-thumbnail>
+        <h2>Upcoming</h2>
+        <p>Upcoming Movie</p>
+      </ion-item>
+
+      <ion-item (click)="Popular()">
+          <ion-thumbnail item-left>
+              <img src="assets/imgs/Popular.jpg">
+            </ion-thumbnail>
+          <h2>Popular</h2>
+        <p>Popular Movie</p>
+        </ion-item>
+  
+        <ion-item (click)="TopRated()">
+            <ion-thumbnail item-left>
+                <img src="assets/imgs/Top.jpg">
+              </ion-thumbnail>
+            <h2>Top Rated</h2>
+            <p>Top Rated Movie</p>
+          </ion-item>
+
+
+  
+</ion-content>

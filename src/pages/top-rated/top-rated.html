@@ -1,0 +1,21 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>TopRated</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-searchbar (ionInput)="onSearch($event)" ></ion-searchbar>
+    <ion-card *ngFor="let item of movieArray">
+      <ion-item (click)="Detail(item)">
+          <ion-thumbnail item-left>
+              <img src="https://image.tmdb.org/t/p/original/{{item.poster_path}}">
+            </ion-thumbnail>
+        <h2>{{item.original_title}}</h2>
+        <p>Release {{item.release_date}}</p>
+        <ion-icon item-right name="arrow-dropright-circle"></ion-icon>
+      </ion-item>
+  
+    </ion-card>
+</ion-content>

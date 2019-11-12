@@ -1,0 +1,18 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>Video Trailers</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    
+    <ion-item *ngFor="let call of callKey">
+      <h2>{{call.name}}</h2>
+    <div>
+        <iframe [src]="openVideo(call.key)" frameborder="0" ></iframe>
+    </div>  
+    </ion-item>
+
+</ion-content>
